@@ -58,7 +58,7 @@ function Login() {
                 </div>
             </div>
 
-            {errorStatus && errorStatus ? <p class="toast errorToast">Invalid Email Credential!</p> : ""}
+            {errorStatus && errorStatus ? <p class="toast errorToast">Plese enter valid login credential!</p> : ""}
         </>
     )
 }
