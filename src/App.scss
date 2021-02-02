@@ -4,6 +4,11 @@ $lightGrey:rgba(216, 216, 216, 0.81);
 $lightBlue:rgb(128, 140, 162);
 $danger:#ea5858;
 
+*{
+	margin:0;
+	padding: 0;
+}
+
 .login-page {
 	width: 360px;
 	padding: 8% 0 0;
@@ -18,6 +23,9 @@ $danger:#ea5858;
 	padding: 45px;
 	text-align: center;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	h1{
+	margin-bottom:20px;
+	}
 	input {
 		outline: 0;
 		background:$white;

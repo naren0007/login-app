@@ -15,6 +15,9 @@ function Login() {
 
     if (loggedIn) {
         history.push("/dashboard");
+        localStorage.setItem('login', true);
+    } else {
+        localStorage.clear();
     }
 
     const checkValue = (e) => {
@@ -34,6 +37,7 @@ function Login() {
             <div>
                 <div className="login-page">
                     <div className="form">
+                        <h1>Sign In</h1>
                         <form className="login-form">
                             <input type="text"
                                 placeholder="username"
