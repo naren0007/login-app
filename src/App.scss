@@ -1,0 +1,86 @@
+$white:#FFFFFF;
+$darkBlue: #263859;
+$lightGrey:rgba(216, 216, 216, 0.81);
+$lightBlue:rgb(128, 140, 162);
+$danger:#ea5858;
+
+.login-page {
+	width: 360px;
+	padding: 8% 0 0;
+	margin: auto;
+}
+.form {
+	position: relative;
+	z-index: 1;
+	background: $white;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	input {
+		outline: 0;
+		background:$white;
+		width: 100%;
+		border: 0;
+		margin: 0 0 15px;
+		padding: 15px;
+		box-sizing: border-box;
+    font-size: 14px;
+    border:1px solid $darkBlue;
+	}
+	button {
+		text-transform: uppercase;
+		outline: 0;
+		background: $darkBlue;
+		width: 100%;
+		border: 0;
+		padding: 15px;
+		color: $white;
+		font-size: 14px;
+		-webkit-transition: all 0.3 ease;
+		transition: all 0.3 ease;
+		cursor: pointer;
+	}
+}
+body {
+	background: $lightBlue;
+}
+table {
+	border-collapse: collapse;
+  width: 98%;
+  margin:20px auto;
+	td {
+		border: 1px solid $lightGrey;
+		padding: 8px;
+	}
+	th {
+		border: 1px solid $lightGrey;
+		padding: 8px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-align: left;
+		background-color: $darkBlue;
+    color: $white;
+    border-top:0px;
+	}
+	tr {
+		background-color: $white;
+	}
+}
+
+// toast
+
+.toast{
+	position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+	color:$white;
+	margin:0;
+}
+
+.errorToast{
+	background:$danger;
+}

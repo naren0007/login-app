@@ -1,0 +1,1 @@
+export const CHECK_DATA = "CHECK_DATA";
